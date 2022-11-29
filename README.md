@@ -1,5 +1,5 @@
 # Airbnb Clone
-
+https://trello.com/b/It7zIDPl/aribnb-mini-project
 Today we start a **1 week group project** in which we will try to create a working *clone of Airbnb*.
 
 Keep in mind:
