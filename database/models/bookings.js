@@ -1,8 +1,7 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
+const {Model, DataTypes} = require('sequelize');
+import connection from '../connection';
+const initBooking = (sequelize, DataTypes) => {
   class Bookings extends Model {
     /**
      * Helper method for defining associations.
@@ -10,15 +9,17 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Bookings.belongsTo(models.User),
+      Bookings.belongsTo(models.Flats)
     }
   }
   Bookings.init({
     FlatId: DataTypes.STRING,
-    UserID: DataTypes.STRING
+    UserId: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Bookings',
   });
   return Bookings;
 };
+export default initBooking(connection, DataTypes);
