@@ -4,23 +4,77 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     
-      await queryInterface.bulkInsert('Flats', [{
-        title: '',
-        description: 'Jenny',
+      await queryInterface.bulkInsert('Flats', [
+        {
+        title: 'Two bed room',
+        description: 'with 76 squere meter and furnshed ...',
         locaiton: '10 ospiti5 camere da letto5 letti3 bagni',
-        price: '595€ notte',
-        codeNo: 'c123',
+        price: 595,
+        codeNo: 123,
         imageurl: 'url',
-        UserId: '',
-      }], {});
+        UserId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'Two bed room',
+        description: 'with 76 squere meter and furnshed ...',
+        locaiton: '10 ospiti5 camere da letto5 letti3 bagni',
+        price: 595,
+        codeNo: 123,
+        imageurl: 'url',
+        UserId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'Two bed room',
+        description: 'with 76 squere meter and furnshed ...',
+        locaiton: '10 ospiti5 camere da letto5 letti3 bagni',
+        price: 595,
+        codeNo: 123,
+        imageurl: 'url',
+        UserId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'Two bed room',
+        description: 'with 76 squere meter and furnshed ...',
+        locaiton: '10 ospiti5 camere da letto5 letti3 bagni',
+        price: 595,
+        codeNo: 123,
+        imageurl: 'url',
+        UserId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'Two bed room',
+        description: 'with 76 squere meter and furnshed ...',
+        locaiton: '10 ospiti5 camere da letto5 letti3 bagni',
+        price: 595,
+        codeNo: 123,
+        imageurl: 'url',
+        UserId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'Two bed room',
+        description: 'with 76 squere meter and furnshed ...',
+        locaiton: '10 ospiti5 camere da letto5 letti3 bagni',
+        price: 595,
+        codeNo: 123,
+        imageurl: 'url',
+        UserId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      }
+    ], {});
   },
 
   async down (queryInterface, Sequelize) {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    await queryInterface.bulkDelete('Flats', null, {});
   }
 };
