@@ -1,8 +1,12 @@
 import Sequelize from 'sequelize';
 import config from './config/config.mjs';
-
+import Bookings from './models/bookings.js';
+import Flats from './models/flats.js';
+import User from './models/user.js';
 const db = {};
-
+db.User = User;
+db.Flats = Flats;
+db.Bookings = Bookings
 let sequelize;
 if (process.env.NODE_ENV === 'production') {
   sequelize = new Sequelize(config.production);

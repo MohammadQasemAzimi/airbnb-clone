@@ -12,7 +12,7 @@ module.exports = {
       FlatId: {
         type: Sequelize.STRING
       },
-      UserID: {
+      UserId: {
         type: Sequelize.STRING
       },
       createdAt: {
