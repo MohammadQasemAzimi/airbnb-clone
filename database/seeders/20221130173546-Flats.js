@@ -8,10 +8,12 @@ module.exports = {
         title: '',
         description: 'Jenny',
         locaiton: '10 ospiti5 camere da letto5 letti3 bagni',
-        price: '595€ notte',
-        codeNo: 'c123',
+        price: '595',
+        codeNo: '123',
         imageurl: 'url',
-        UserId: '',
+        UserId: '',        
+        createdAt: new Date(),
+        updatedAt: new Date()
       }], {});
   },
 
