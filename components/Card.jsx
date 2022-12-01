@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css"
 export default function Component({flat}) {
  console.log('image url is ',flat.imageurl)
   return (
-    <Link href={`/${flat.id}`}>
+    <Link href={`/flats/${flat.id}`}>
       <div className={styles.card} >
         <h6>{flat.description}</h6>
         <h6>{flat.locaiton}</h6>

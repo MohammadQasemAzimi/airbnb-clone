@@ -21,7 +21,7 @@ export default function Home(props) {
       </Head>
       <Container>
         <Row>
-          {flats.map(flat => (<Col key={flat.id}><Card flat={flat} key={flat.id} /></Col>))}
+          {flats.map((flat,index) => (<Col key={flat.id}><Card flat={flat} key={flat.id} /></Col>))}
         </Row>
       </Container>
     </>
