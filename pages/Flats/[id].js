@@ -1,4 +1,4 @@
-import styles from '../../styles/selectOne.css'
+import styles from '../../styles/Home.module.css'
 import flatsController from '../../controllers/flatsController'
 import Navbar from '../../components/navbar'
 
