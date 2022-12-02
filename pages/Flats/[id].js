@@ -3,7 +3,7 @@ import flatsController from '../../controllers/flatsController'
 import Navbar from '../../components/navbar'
 
 export default function selectOne(props) {
-    const flats = props.flats
+    const flats = props.flat
     console.log(flats)
 
   return (
@@ -22,13 +22,7 @@ export default function selectOne(props) {
 
     </div>
         
-      
-        
-        
-     
-        
-    
-      
+ 
     </>
   )
 }

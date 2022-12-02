@@ -1,15 +1,17 @@
 import Link from "next/link"
 import Image from "next/image"
-import styles from "../styles/Home.module.css"
+import styles from "./Card.module.css"
 
 export default function Component({flat}) {
  console.log('image url is ',flat.imageurl)
   return (
     <Link href={`/flats/${flat.id}`}>
       <div className={styles.card} >
-        <h6>{flat.description}</h6>
-        <h6>{flat.locaiton}</h6>
-        <h6>{`Falt No. ${flat.codeNo}`} {` Price ${flat.price}$ For Night`}</h6>
+        <h1>image</h1>
+        <h5>{flat.title}</h5>
+        <p>{flat.description}</p>
+        <p>{flat.locaiton}</p>
+        <p>{`Falt No. ${flat.codeNo}`} {` Price ${flat.price}$ For Night`}</p>
       </div>
     </Link>
   )

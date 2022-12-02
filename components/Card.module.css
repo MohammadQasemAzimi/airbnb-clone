@@ -1,0 +1,32 @@
+.card {
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 10%;
+  margin-top: 0;
+  background-size: cover;
+  margin: 0 10%;
+  width: 100%;
+}
+.card h1 {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 0;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.card h6 {
+  color: black;
+  font-size: 1rem;
+  margin-top: 0;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.card p {
+  margin-top: 0;
+  font-size: 15px;
+}

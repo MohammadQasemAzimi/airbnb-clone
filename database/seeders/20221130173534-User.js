@@ -6,7 +6,7 @@ const { NOW, DATE } = require('sequelize');
 module.exports = {
   async up (queryInterface, Sequelize) {
     
-      await queryInterface.bulkInsert('Users', [{
+      await queryInterface.bulkInsert('User', [{
         id:1,
         name: 'Qasem',
         lastName: 'Azimi',
@@ -18,6 +18,6 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-      await queryInterface.bulkDelete('Users', null, {});
+      await queryInterface.bulkDelete('User', null, {});
   }
 };
