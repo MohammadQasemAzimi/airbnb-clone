@@ -10,6 +10,11 @@ const flatsController = {
     const flat = await db.Flats.findByPk(id)
     const parsedFlat = JSON.parse(JSON.stringify(flat))
     return parsedFlat
+  },
+  findUserFlats: async(userId)=>{
+    const userFlats = await db.Flats.findAll({where:{UserId:userId}})
+    const parsedUserFlats = JSON.parse(JSON.stringify(userFlats))
+    return parsedUserFlats
   }
 }
 
