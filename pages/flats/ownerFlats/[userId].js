@@ -4,7 +4,7 @@ import Card from '../../../components/Card'
 //import Navbar from '../../components/navbar'
 
 export default function selectBookedFlats(props) {
-  const flats = props.bookedFlat
+  const flats = props.ownerFlat
 
   return (     
       <div class={styles.container}>
@@ -15,10 +15,10 @@ export default function selectBookedFlats(props) {
 
 export async function getServerSideProps(req, res) {
   const { userId } = req.query
-  const bookedFlat = await flatsController.findUserFlats(userId)
+  const ownerFlat = await flatsController.findUserFlats(userId)
   try {
     return {
-      props: { bookedFlat },
+      props: { ownerFlat },
     }
   } catch (error) {
     console.log(error)
