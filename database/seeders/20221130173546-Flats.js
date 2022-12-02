@@ -6,6 +6,7 @@ module.exports = {
     
       await queryInterface.bulkInsert('Flats', [
         {
+        id:1,
         title: 'Two bed room',
         description: 'with 76 squere meter and furnshed ...',
         locaiton: '10 ospiti5 camere da letto5 letti3 bagni',
@@ -17,6 +18,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        id:2,
         title: 'Two bed room',
         description: 'with 76 squere meter and furnshed ...',
         locaiton: '10 ospiti5 camere da letto5 letti3 bagni',
@@ -28,6 +30,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        id:3,
         title: 'Two bed room',
         description: 'with 76 squere meter and furnshed ...',
         locaiton: '10 ospiti5 camere da letto5 letti3 bagni',
@@ -39,6 +42,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        id:4,
         title: 'Two bed room',
         description: 'with 76 squere meter and furnshed ...',
         locaiton: '10 ospiti5 camere da letto5 letti3 bagni',
@@ -50,6 +54,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        id:5,
         title: 'Two bed room',
         description: 'with 76 squere meter and furnshed ...',
         locaiton: '10 ospiti5 camere da letto5 letti3 bagni',
@@ -61,6 +66,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        id:6,
         title: 'Two bed room',
         description: 'with 76 squere meter and furnshed ...',
         locaiton: '10 ospiti5 camere da letto5 letti3 bagni',
