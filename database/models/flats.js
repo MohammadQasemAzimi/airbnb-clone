@@ -20,7 +20,7 @@ const initFlats = (sequelize, DataTypes) => {
     price: DataTypes.INTEGER,
     codeNo: DataTypes.INTEGER,
     imageurl: DataTypes.STRING,
-    UserId: DataTypes.STRING
+    UserId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Flats',
