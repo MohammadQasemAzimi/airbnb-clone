@@ -1,40 +1,101 @@
 .navbar {
+    position: fixed;
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    justify-content: space-around;
     background-color: white;
-    height: 7vh;
+    height: 10vh;
     width: 100%;
     color: black;
-    display: flex;
-   margin-top: 10px;
-   
-    
+    border-top: 1px solid rgba(191, 191, 191, 0.4);
+    border-bottom: 1px solid rgba(191, 191, 191, 0.4);
   }
   
- 
   .navlogo {
-    flex: 1;
-    height: 10vh;
+    display: flex;
+    flex-grow: 1;
+    height: 8vh;
     width: 20vh;
-    margin-left: 100px;
-    
+    margin-left: -150%;
   }
 
+/* for the serach*/
+.search {
+  flex-grow: 1;
+  height: 10px;
+  position: absolute;
+  align-items: center;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+.search > div {
+  display: inline-block;
+  position: relative;
+  filter: drop-shadow(0 1px #dd3173);
+}
+
+.brand2{
+  color: #dd3173;
+  position: absolute;
+  margin-right: 200px;
+  opacity: 0.1;
+}
+
+.search > div:after {
+  content: "";
+  background: #dd3173;
+  width: 3px;
+  height: 20px;
+  position: absolute;
+  top: 25px;
+  right: -7px;
+  transform: rotate(135deg);
+}
+
+.search > div > input {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: solid 1px white;
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+}
+
+.search > div > input::placeholder {
+  color: #00000039;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.search > div > input:focus::placeholder {
+  opacity: 1;
+}
+
+.search > div > input:focus,
+.search > div > input:not(:placeholder-shown) {
+  width: 250px;
+}
+
+/* for the serach*/
+
+
+
   .navsignin{
-    flex: 1;
-    
+    flex: 3;
     height: 4vh;
     width: 5vh;
     margin-top: 10px;
-    margin-left: 500px;
-    margin-right: 50px;
-    border-radius: 50%;
+    margin-left: 800%;
+    border-radius: 50px;
     align-items: center;
   }
-  .navsearch {
-    flex:1;
-   margin-left: 300px;
-   padding-top: 20px;
-   
-  }
+ 
   .navicon{
     flex: 1;
     height: 4vh;

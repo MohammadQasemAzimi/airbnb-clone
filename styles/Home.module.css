@@ -1,18 +1,10 @@
 .cards{
   display: flex;
+  padding-top: 100px;
   flex-direction: row;
   justify-content: space-around;
   margin: 0 5%;
-  margin: 1% 2%;
 }
-
-
-
-
-
-
-
-
 
 .main {
   min-height: 100vh;
@@ -250,7 +242,7 @@
   justify-content: space-between;
   margin-left: 250px;
   margin-top: 10px;
-}}
+}
 .container2 div{
   border: 1px rgb(248, 245, 245) solid;
   padding: 20px;
