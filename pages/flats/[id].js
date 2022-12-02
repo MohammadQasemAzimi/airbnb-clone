@@ -1,21 +1,24 @@
 import styles from  '../../styles/Home.module.css'
 import flatsController from '../../controllers/flatsController'
+import Image from 'next/image'
 //import Navbar from '../../components/navbar'
 
 export default function selectOne(props) {
-  const flats = props.flat
+  const flat = props.flat
 
   return (
     <>      
       <div class={styles.container}>
-        <div class="child">Flat Image</div>
+        <div class="child">
+          <Image src={flat.imageurl} width='100' height='100' alt=''/>
+        </div>
         <div class="child">Owner Details</div>
         <div class="child" >Flat details
-          <h5>{flats.title}</h5>
-          <h6>{flats.description}</h6>
-          <h6>{flats.location}</h6>
-          <h6>{flats.codeNo}</h6>
-          <h6>{flats.price}</h6>
+          <h5>{flat.title}</h5>
+          <h6>{flat.description}</h6>
+          <h6>{flat.location}</h6>
+          <h6>{flat.codeNo}</h6>
+          <h6>{flat.price}</h6>
         </div>
       </div>
     </>
