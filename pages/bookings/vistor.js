@@ -1,7 +1,7 @@
 import bookingController from '../../controllers/bookingController'
 import styles from '../../styles/Home.module.css'
 import Card from '../../components/Card'
-import flatsController from '../../controllers/flatsController'
+
 //import Navbar from '../../components/navbar'
 export default function selectOne(props) {
 
