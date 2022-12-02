@@ -10,7 +10,7 @@ export default function selectOne(props) {
     <>      
       <div class={styles.container}>
         <div class="child">
-          <Image src={flat.imageurl} width='100' height='100' alt=''/>
+          <Image src={flat.imageurl} width='500' height='500' alt=''/>
         </div>
         <div class="child">Owner Details</div>
         <div class="child" >Flat details
