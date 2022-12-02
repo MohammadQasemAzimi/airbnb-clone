@@ -1,0 +1,44 @@
+.navbar {
+    background-color: white;
+    height: 7vh;
+    width: 100%;
+    color: black;
+    display: flex;
+   margin-top: 10px;
+   
+    
+  }
+  
+ 
+  .navlogo {
+    flex: 1;
+    height: 10vh;
+    width: 20vh;
+    margin-left: 100px;
+    
+  }
+
+  .navsignin{
+    flex: 1;
+    
+    height: 4vh;
+    width: 5vh;
+    margin-top: 10px;
+    margin-left: 500px;
+    margin-right: 50px;
+    border-radius: 50%;
+    align-items: center;
+  }
+  .navsearch {
+    flex:1;
+   margin-left: 300px;
+   padding-top: 20px;
+   
+  }
+  .navicon{
+    flex: 1;
+    height: 4vh;
+    width: 5vh;
+  }
+
+  
