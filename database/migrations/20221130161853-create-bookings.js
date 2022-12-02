@@ -10,10 +10,10 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       FlatId: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       UserId: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
