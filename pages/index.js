@@ -1,15 +1,12 @@
 import flatsController from '../controllers/flatsController'
 import Card from '../components/Card'
 import Head from 'next/head';
-
 //import React from "react";
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
 
 export default function Home(props) {
-
-  //console.log('result of props is ', props);
   const flats = props.flats;
   return (
     <>
