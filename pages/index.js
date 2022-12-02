@@ -10,6 +10,7 @@ export default function Home(props) {
   const flats = props.flats;
   return (
     <>
+     
       <Head>
         <link
           rel="stylesheet"
