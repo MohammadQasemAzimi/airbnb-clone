@@ -1,13 +1,18 @@
 import styles from '../styles/NewFlat.module.css'
 import ImageUpload from "../components/imageUpload"
 import Link from 'next/link'
-
+import Navbar from '../components/navbar'
 
 export default function NewFlat(props) {
-  return (<>
+  const flats = props.flat
+  return (
+  <>
+    <Navbar></Navbar>
     <div className={styles.container}>
       <Link href="/">back</Link>
-      <h1>Create new Flats</h1>
+      <div className={styles.row}>
+        <h1>Create new Flats</h1>
+      </div>
       <form method="POST" action="/api/flat/new">
         <label htmlFor="title">title:</label><br />
         <input type="text" id="title" name="title" /><br />
@@ -23,5 +28,6 @@ export default function NewFlat(props) {
         <input type="submit" value="Submit" /><br />
       </form>
     </div>
-  </>)
+  </>
+  )
 }

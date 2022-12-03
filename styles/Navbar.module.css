@@ -1,49 +1,41 @@
 .navbar {
-    position: fixed;
-    display: flex;
-    align-items: stretch;
-    text-align: center;
-    justify-content: space-around;
-    background-color: white;
-    height: 10vh;
-    width: 100%;
-    color: black;
-    border-top: 1px solid rgba(191, 191, 191, 0.4);
-    border-bottom: 1px solid rgba(191, 191, 191, 0.4);
-  }
-  
-  .navlogo {
-    display: flex;
-    flex-grow: 1;
-    height: 8vh;
-    width: 20vh;
-    margin-left: -150%;
-  }
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: white;
+  height: 10vh;
+  width: 100%;
+  color: black;
+  border-top: 1px solid rgba(191, 191, 191, 0.4);
+  border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+}
+
+.navlogo {
+  display: flex;
+  flex: 1;
+  height: 8vh;
+  width: 20vh;
+  margin-left: 120px;
+}
 
 /* for the serach*/
 .search {
-  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex: 1;
   height: 10px;
-  position: absolute;
-  align-items: center;
   padding-top: 20px;
-  border-radius: 10px;
 }
 
-.search > div {
+.search>div {
   display: inline-block;
   position: relative;
   filter: drop-shadow(0 1px #dd3173);
+  cursor: pointer;
 }
 
-.brand2{
-  color: #dd3173;
-  position: absolute;
-  margin-right: 200px;
-  opacity: 0.1;
-}
-
-.search > div:after {
+.search>div:after {
   content: "";
   background: #dd3173;
   width: 3px;
@@ -54,52 +46,62 @@
   transform: rotate(135deg);
 }
 
-.search > div > input {
-  color: rgb(0, 0, 0);
+.search>div>input {
+  color: white;
   font-size: 16px;
-  background: transparent;
+  background: #dd3173;
   width: 25px;
   height: 25px;
   padding: 10px;
-  border: solid 1px white;
+  border: solid 1px rgb(255, 255, 255);
   outline: none;
   border-radius: 35px;
   transition: width 0.5s;
 }
 
-.search > div > input::placeholder {
-  color: #00000039;
+.search>div>input::placeholder {
+  color: #da9ab2;
   opacity: 0;
   transition: opacity 150ms ease-out;
 }
 
-.search > div > input:focus::placeholder {
+.search>div>input:focus::placeholder {
   opacity: 1;
 }
 
-.search > div > input:focus,
-.search > div > input:not(:placeholder-shown) {
-  width: 250px;
+.search>div>input:focus,
+.search>div>input:not(:placeholder-shown) {
+  width: 300px;
 }
 
 /* for the serach*/
 
+.navlinkd{
+  display: flex;
+  border: 2px solid #c9c9c9;
+  border-radius: 15px;
+  height: 50px;
+  width: 100px;
+  margin-top: 10px;
+  margin-right: 80px;
+  transition: 0.5s;
+}
+.navlinkd:hover{
+  box-shadow: 1px 1px 5px #c9c9c9;
+}
 
+.navsignin {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  height: 4vh;
+  width: 5vh;
+  margin-top: 10px;
+  margin-right: 80px;
+}
 
-  .navsignin{
-    flex: 3;
-    height: 4vh;
-    width: 5vh;
-    margin-top: 10px;
-    margin-left: 800%;
-    border-radius: 50px;
-    align-items: center;
-  }
- 
-  .navicon{
-    flex: 1;
-    height: 4vh;
-    width: 5vh;
-  }
-
-  
+.navicon {
+  flex: 1;
+  height: 4vh;
+  width: 5vh;
+}

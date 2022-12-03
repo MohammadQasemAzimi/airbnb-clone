@@ -1,8 +1,7 @@
 .container {
-    padding: 0 2rem;
-    width: 20rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 20%;
-  }
+  display: flex;
+  padding-top: 10%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
