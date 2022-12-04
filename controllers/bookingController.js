@@ -1,8 +1,16 @@
 import db from '../database'
-import useSWR from 'swr'
 const BookingController = {
-  all: async () => {
-    const booking = await db.Bookings.findAll()
+  create: async (data) => {
+    console.log(db.models)
+    const flat = await db.Bookings.create(data)
+    return JSON.parse(JSON.stringify(flat))
+  },
+  allBookings: async () => {
+    const booking = await db.Flats.findAll({
+      include: {
+        model: db.Bookings
+      }
+    })
     const parsedBook = JSON.parse(JSON.stringify(booking))
     return parsedBook
   },

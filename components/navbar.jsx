@@ -10,7 +10,11 @@ export default function Component() {
           <img className={styles.navlogo} src="https://miro.medium.com/max/1400/0*NChTo-XqLOxLabIW"></img>
         </Link>
       </div>
-     
+      <div className={styles.navlink}>
+        <Link href={`/new`}>
+          <h5>+ New Flat</h5>
+        </Link>
+      </div>
       <div className={styles.search}>
         <div>
           <input type="text" placeholder="Search . . ." required />

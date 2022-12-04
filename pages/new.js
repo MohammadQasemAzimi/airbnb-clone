@@ -2,9 +2,22 @@ import styles from '../styles/NewFlat.module.css'
 import ImageUpload from "../components/imageUpload"
 import Navbar from '../components/navbar'
 import { Input } from 'reactstrap'
+import { useState } from 'react'
 
 export default function NewFlat(props) {
   const flats = props.flat
+  const [url, setUrl] = useState('')
+  const handlimgUpload = async (event) => {
+    const file = event.target.files[0]
+    const imageForm = new FormData()
+    imageForm.append("file", file)
+    imageForm.append("upload_preset", "rlqse9el")
+    const imgFetch = await fetch("https://api.cloudinary.com/v1_1/dlmrmq1tl/image/upload", 
+    {method: "POST", body: imageForm}
+    )
+    const res = await imgFetch.json()
+    setUrl(res.secure_url)
+  }
   return (
     <>
       <Navbar></Navbar>
@@ -13,7 +26,7 @@ export default function NewFlat(props) {
           <div className={styles.card}>
             <h2 className={styles.cardTitle}>Create <a href="../new">a New Flat</a></h2>
             <div className={styles.cardBody}>
-              <form method="POST" action="/api/flat/new">
+              <form method="POST" action="/api/new">
                 <div className={styles.formGroup}>
                   <label htmlFor="title" className={styles.label}>Title:</label><br />
                   <Input type="text" name='title' className={styles.formControl} id="title" placeholder="Title" />
@@ -36,7 +49,8 @@ export default function NewFlat(props) {
                 </div>
                 <div className={styles.formGroup}>
                   <label htmlFor="imgUploud" className={styles.label}>Uploud image:</label><br />
-                  <ImageUpload type="file" name="imgUploud" className={styles.formControl} id="imgUploud" />
+                  <input type="file" name="imgUploud" className={styles.formControl} id="imgUploud" onChange={handlimgUpload}/>
+                  <input type="hidden" name='imageurl' value={url}/>
                 </div>
                 <br />
                 <div lassName={styles.formGroup}>

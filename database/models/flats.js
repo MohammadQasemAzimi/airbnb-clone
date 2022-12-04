@@ -10,7 +10,8 @@ const initFlats = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Flats.hasMany(models.User)
+      Flats.hasMany(models.User),
+      Flats.hasMany(models.Bookings)
     }
   }
   Flats.init({
