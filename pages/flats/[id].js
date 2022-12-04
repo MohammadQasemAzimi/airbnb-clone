@@ -1,10 +1,10 @@
 import styles from '../../styles/Select.module.css'
 import flatsController from '../../controllers/flatsController'
 import Navbar from '../../components/navbar'
-
+import { Input } from 'reactstrap'
 export default function selectOne(props) {
   const flats = props.flat
-  console.log(flats)
+  console.log('QaSEM', flats)
 
   return (
     <>
@@ -58,11 +58,24 @@ export default function selectOne(props) {
           <div class={styles.column}>
             <div className={styles.reserveCard}>
               <div className={styles.box8}>
-                <h4>You can book it</h4>
-                <h6>Check in : 01/12/2022</h6>
-                <h6>check out : 10/12/2022</h6>
-                <h6>Number of guest: 1</h6>
-                <button type="button" class={styles.reserveBtn}>Reserve</button>
+                <form method="POST" action="/api/booking">
+                  <div className={styles.formGroup}>
+                    <label htmlFor="checkinDate" className={styles.label}>Checkin Date:</label><br />
+                    <Input type="date" name='checkin' className={styles.formControl} id="checkin" />
+                  </div>
+                  <div className={styles.formGroup}>
+                    <label htmlFor="checkoutDate" className={styles.label}>Checkout Date:</label><br />
+                    <Input type="date" name='checkout' className={styles.formControl} id="checkout" />
+                  </div>
+                  <div className={styles.formGroup}>
+                    <label htmlFor="guest" className={styles.label}>Guest Number:</label><br />
+                    <Input type="number" name="guest" className={styles.formControl} id="guest" placeholder="Code Number" />
+                  </div>
+                  <input type="hidden" name="FlatId" value={flats.id}/>
+                  <div lassName={styles.formGroup}>
+                    <input type="submit" className={styles.btn} value="Submit" /><br />
+                  </div>
+                </form>
               </div>
             </div>
           </div>

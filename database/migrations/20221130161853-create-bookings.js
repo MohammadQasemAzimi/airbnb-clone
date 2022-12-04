@@ -15,6 +15,15 @@ module.exports = {
       UserId: {
         type: Sequelize.INTEGER
       },
+      checkin: {
+        type: Sequelize.DATE
+      },
+      checkout: {
+        type: Sequelize.DATE
+      },
+      guest: {
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

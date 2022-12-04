@@ -9,6 +9,9 @@ module.exports = {
     UserId: 1,
       createdAt: new Date(),
       updatedAt: new Date(),
+      checkin: new Date(),
+      checkout: new Date(),
+      guest: 1
     }], {});
   },
 
