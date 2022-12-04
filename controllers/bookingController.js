@@ -1,5 +1,5 @@
 import db from '../database'
-
+import useSWR from 'swr'
 const BookingController = {
   all: async () => {
     const booking = await db.Bookings.findAll()

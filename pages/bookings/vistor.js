@@ -12,7 +12,7 @@ export default function selectOne(props) {
      
         <div>
             {vistorBookings.map(vistorBooking => (
-                <h2 key={vistorBooking.id} >userId: {vistorBooking.UserId}, FlatId: {vistorBooking.FlatId},</h2>
+                <h2 key={vistorBooking.id} >userId: {vistorBooking.UserId}, FlatId: {vistorBooking.FlatId}</h2>
 
             ))}
         </div>

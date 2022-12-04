@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: first baseline;
   padding-top: 100px;
   margin: 0 5%;
 }
