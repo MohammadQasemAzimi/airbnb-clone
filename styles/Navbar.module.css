@@ -1,0 +1,107 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: white;
+  height: 10vh;
+  width: 100%;
+  color: black;
+  border-top: 1px solid rgba(191, 191, 191, 0.4);
+  border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+}
+
+.navlogo {
+  display: flex;
+  flex: 1;
+  height: 8vh;
+  width: 20vh;
+  margin-left: 120px;
+}
+
+/* for the serach*/
+.search {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  height: 10px;
+  padding-top: 20px;
+}
+
+.search>div {
+  display: inline-block;
+  position: relative;
+  filter: drop-shadow(0 1px #dd3173);
+  cursor: pointer;
+}
+
+.search>div:after {
+  content: "";
+  background: #dd3173;
+  width: 3px;
+  height: 20px;
+  position: absolute;
+  top: 25px;
+  right: -7px;
+  transform: rotate(135deg);
+}
+
+.search>div>input {
+  color: white;
+  font-size: 16px;
+  background: #dd3173;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: solid 1px rgb(255, 255, 255);
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+}
+
+.search>div>input::placeholder {
+  color: #da9ab2;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.search>div>input:focus::placeholder {
+  opacity: 1;
+}
+
+.search>div>input:focus,
+.search>div>input:not(:placeholder-shown) {
+  width: 300px;
+}
+
+/* for the serach*/
+
+.navlinkd{
+  display: flex;
+  border: 2px solid #c9c9c9;
+  border-radius: 15px;
+  height: 50px;
+  width: 100px;
+  margin-top: 10px;
+  margin-right: 80px;
+  transition: 0.5s;
+}
+.navlinkd:hover{
+  box-shadow: 1px 1px 5px #c9c9c9;
+}
+
+.navsignin {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  height: 4vh;
+  width: 5vh;
+  margin-top: 10px;
+  margin-right: 80px;
+}
+
+.navicon {
+  flex: 1;
+  height: 4vh;
+  width: 5vh;
+}
