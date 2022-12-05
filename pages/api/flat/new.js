@@ -8,6 +8,5 @@ export default async function handler(req, res) {
     })
     // the redirect metod sends the user to the specified path
     res.status(200).redirect(`/flats/${flat.id}`);
-    
   }
   
