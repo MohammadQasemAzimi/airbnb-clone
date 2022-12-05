@@ -14,8 +14,11 @@ const initBooking = (sequelize, DataTypes) => {
     }
   }
   Bookings.init({
-    FlatId: DataTypes.STRING,
-    UserId: DataTypes.STRING
+    FlatId: DataTypes.INTEGER,
+    UserId: DataTypes.INTEGER,
+    checkin: DataTypes.DATE,
+    checkout: DataTypes.DATE,
+    guest: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Bookings',

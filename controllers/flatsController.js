@@ -1,6 +1,11 @@
 import db from '../database'
 
 const flatsController = {
+  create: async (data) => {
+    console.log(db.models)
+    const flat = await db.Flats.create(data)
+    return JSON.parse(JSON.stringify(flat))
+  },
   all: async () => {
     const flats = await db.Flats.findAll()
     const parsedFlats = JSON.parse(JSON.stringify(flats))

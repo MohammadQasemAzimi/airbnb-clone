@@ -10,10 +10,19 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       FlatId: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       UserId: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
+      },
+      checkin: {
+        type: Sequelize.DATE
+      },
+      checkout: {
+        type: Sequelize.DATE
+      },
+      guest: {
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,

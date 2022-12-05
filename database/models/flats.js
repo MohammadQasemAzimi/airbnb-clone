@@ -10,7 +10,8 @@ const initFlats = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Flats.hasMany(models.User)
+      Flats.hasMany(models.User),
+      Flats.hasMany(models.Bookings)
     }
   }
   Flats.init({
@@ -20,7 +21,7 @@ const initFlats = (sequelize, DataTypes) => {
     price: DataTypes.INTEGER,
     codeNo: DataTypes.INTEGER,
     imageurl: DataTypes.STRING,
-    UserId: DataTypes.STRING
+    UserId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Flats',

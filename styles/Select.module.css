@@ -1,0 +1,159 @@
+.somepagewrapper {
+    padding-top: 5%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+  }
+  
+  .column {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .orangecolumn {
+    width: 800px;
+    height: 400px;
+    padding-top: 50px;
+  }
+  .orangecolumn div{
+    border: 2px solid #c9c9c9;
+    border-radius: 15px 0 0 15px;
+    margin-left: 10%;
+    height: 100%;
+    width: auto;
+    transition: 0.5s;
+  }
+  .orangecolumn div:hover{
+    box-shadow: 0px 0px 50px 1px #c9c9c9;
+  }
+
+  .bluecolumn {
+    height: 200px;
+    width: 300px;
+    padding-top: 50px;
+  }
+  .bluecolumn div{
+    border: 2px solid #c9c9c9;
+    border-radius: 0;
+    height: 100%;
+    width: auto;
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+  .bluecolumn div:hover{
+    box-shadow: 0px 0px 50px 1px #c9c9c9;
+  }
+
+  .bluecolumn2 {
+    margin-top: 20px;
+    height: 180px;
+    width: auto;
+  }
+  .bluecolumn2 div{
+    border: 2px solid #c9c9c9;
+    border-radius: 0;
+    height: 100%;
+    width: auto;
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+  .bluecolumn2 div:hover{
+    box-shadow: 0px 0px 50px 1px #c9c9c9;
+  }
+
+  .greencolumn {
+    height: 200px;
+    width: 300px;
+    padding-top: 50px;
+  }
+  .greencolumn div{
+    border: 2px solid #c9c9c9;
+    border-radius: 0 15px 0 0;
+    height: 100%;
+    width: auto;
+    margin: 0 20% 0 0;
+    transition: 0.5s;
+  }
+  .greencolumn div:hover{
+    box-shadow: 0px 0px 50px 1px #c9c9c9;
+  }
+
+  .greencolumn2 {
+    margin-top: 20px;
+    height: 180px;
+    width: auto;
+  }
+  .greencolumn2 div{
+    border: 2px solid #c9c9c9;
+    border-radius: 0 0 15px 0;
+    height: 100%;
+    width: auto;
+    margin: 0 20% 0 0;
+    transition: 0.5s;
+  }
+  .greencolumn2 div:hover{
+    box-shadow: 0px 0px 50px 1px #c9c9c9;
+  }
+
+  .blackcolumn {
+    width: 700px;
+    height: 200px;
+    padding-top: 50px;
+  }
+  .blackcolumn div{
+    border-bottom: 2px solid #c9c9c9;
+    margin-left: 10%;
+    width: auto;
+  }
+  .blackcolumn h1 {
+    font-style: normal;
+  }
+  
+  .reserveCard {
+    width: 600px;
+    margin-left: 7%;
+    height: 400px;
+    padding-top: 50px;
+  }
+  .reserveCard div{
+    border: 2px solid #c9c9c9;
+    border-radius: 15px 15px;
+    margin-left: 10%;
+    height: 100%;
+    width: auto;
+    padding: 0 30px;
+  }
+
+  .reserveBtn {
+    height: 50px;
+    width: 50%;
+    margin: 0;
+    color: white;
+    font-size: large  ;
+    background-color: #dd3173;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+  }
+  .reserveBtn:hover {
+    background-color: #fa0060;
+    cursor: pointer;
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    .blackcolumn {
+      width: 400px;
+  }
+    .orangecolumn {
+      width: 500px;
+    }
+}
